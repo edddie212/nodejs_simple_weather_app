@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+</head>
+<body>
+<div class="main-content">
+    {{>header}}
+
+    <p>Use this site to get your weather!</p>
+
+</div>
+<small>Enter a city and country code to get the weather!</small>
+<br>
+<div class="search-form">
+
+    <form action="">
+        <input id="city" type="text" placeholder="Example: New York">
+        <input id="country_code" type="text" placeholder="Example: US">
+        <button>Search</button>
+    </form>
+    <p id="loading_msg"></p>
+    <p id="error_msg"></p>
+    <p id="success_msg"></p>
+</div>
+
+
+{{>footer}}
+
+<script src="./js/app.js"></script>
+</body>
+</html>
