@@ -13,7 +13,7 @@ const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 const publicDir = path.join(__dirname, '../public');
 const viewsDir = path.join(__dirname, '../templates/views');
 const partialsDir = path.join(__dirname, '../templates/partials');
-const port = 3002;
+const port = 3000;
 
 //Setup templates directory for hbs
 app.set('view engine', 'hbs');
@@ -22,9 +22,8 @@ hbs.registerPartials(partialsDir);
 
 //Setup static directory to serve
 app.use(express.static(publicDir));
-console.log(publicDir)
 
-//Setup views to render
+//Setup templates to render
 app.get('/', (req, res)=>{
     res.render('index', {
         title:  'Weather App',

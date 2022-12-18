@@ -6,6 +6,7 @@ let loadingMsg = document.querySelector('#loading_msg');
 let errorMsg = document.querySelector('#error_msg');
 let successMsg = document.querySelector('#success_msg');
 
+alert(123)
 
 weatherForm.addEventListener('submit',(e)=>{
     e.preventDefault();
@@ -14,8 +15,9 @@ weatherForm.addEventListener('submit',(e)=>{
         res.json().then((data)=>{
             if(!data.error){
                 loadingMsg.textContent = '';
-                successMsg.textContent = data;
-                return console.log(data)
+                successMsg.textContent = `The current weather in ${data.city}, ${data.cityName}, ${data.country} is ${data.tempC} degrees\n
+                with ${data.humidity}% humidity, wind speed is ${data.windSpeedKPH} KPH ${data.day != false ? 'it is day time in ' + data.city : 'it is night time in ' + data.city}.`;
+                return;
             }
             loadingMsg.textContent = '';
             errorMsg.textContent = data.error;
