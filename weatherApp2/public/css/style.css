@@ -1,0 +1,114 @@
+body {
+    background: linear-gradient(to right, rgb(11 55 118), rgb(2 130 252));
+}
+
+.gradient-custom {
+    background: #ffffff;
+    background: -webkit-linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 236, 210, 1));
+    background: linear-gradient(to right, rgb(240 205 45), rgb(221 133 11));
+}
+
+.carousel-indicators li {
+    background-color: #282828;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+header,footer {
+    background-color: #092c60;
+}
+
+.header-nav-links {
+    color: #ffffff;
+ }
+
+.header-nav-links:hover {
+    color: #a6caff;
+}
+
+.home-section {
+    background-color: #2d6ba5;'
+    background: -webkit-linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 236, 210, 1));
+    background: linear-gradient(to right, rgb(11 55 118), rgb(2 130 252));
+
+}
+
+.menu-icon {
+    display: none;
+}
+
+#city, #country {
+    color:#000000;
+}
+
+.weather-cards {
+    box-shadow: 0px 1px 11px 3px;
+}
+
+.future-weather-cards {
+    background: linear-gradient(to right, rgb(4 59 136), rgb(72 150 225));
+}
+
+/*Mobile CSS*/
+@media only screen and (max-width: 767px) {
+    .desktop-nav {
+        display: none!important;
+    }
+
+    .search-form {
+        padding: 8px 0px 0px 10px;
+    }
+
+    .search-form > input {
+        width: 32vh;
+    }
+
+    .menu-icon {
+        display: block;
+        margin-top:-4px;
+    }
+    .menu-icon > span {
+        padding: 0vh 0vh 0vh 2vh;
+        font-size: 32px;
+        font-family: 400;
+    }
+
+    .mobile-menu-content {
+        width: 100%;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        background-color: #fff;
+        z-index: 10;
+    }
+
+    .menu-tab {
+        height: auto;
+        border-bottom: 2px #000000 solid;
+    }
+
+
+
+    .menu-tab > a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .menu-tab:first-child {
+        padding-top: 6px;
+    }
+
+    .sidebar {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: #f1f1f1;
+        height: 100%;
+        z-index: 100;
+
+    }
+    footer {
+        margin-top: 6rem;
+    }
+    /*html, body {margin: 0; height: 100%; overflow: hidden}*/
+}
